@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+      height: 100vh;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #0d8ce0;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #f0f0f0;
+    }
+
+    .header .search {
+      flex: 1;
+      margin: 0 20px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      background: #e0e5eb;
+    }
+
+    .projects, .announcements, .trending {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid gold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project-card h4 {
+      margin-bottom: 8px;
+    }
+
+    .right-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .announcement-item, .trending-item {
+      margin-bottom: 10px;
+    }
+
+    .trending-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="#">🏠 Home</a>
+    <a href="#">👤 Profile</a>
+    <a href="#">💬 Messages</a>
+    <a href="#">🕒 History</a>
+    <a href="#">📋 Tasks</a>
+    <a href="#">👥 Communities</a>
+    <a href="#">⚙️ Settings</a>
+    <a href="#">❓ Support</a>
+    <a href="#">🛡 Privacy</a>
+  </div>
+
+  <div class="header">
+    <input type="text" class="search" placeholder="Search...">
+    <div>🔔</div>
+    <div>👤 Morgan Oakley</div>
+  </div>
+
+  <div class="main">
+    <div>
+      <h3>Your Projects</h3>
+      <div class="projects">
+        <div class="project-card">
+          <h4>Super Cool Project</h4>
+          <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+        </div>
+        <div class="project-card">
+          <h4>Less Cool Project</h4>
+          <p>Nullam condimentum ipsum ut lectus vehicula consectetur...</p>
+        </div>
+        <div class="project-card">
+          <h4>Impossible App</h4>
+          <p>Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+        </div>
+        <div class="project-card">
+          <h4>Easy Peasy App</h4>
+          <p>Vestibulum dignissim urna eget accumsan aliquam...</p>
+        </div>
+        <div class="project-card">
+          <h4>Ad Blocker</h4>
+          <p>Quisque eget rutrum nisl. Nam augue justo...</p>
+        </div>
+        <div class="project-card">
+          <h4>Money Maker</h4>
+          <p>Praesent convallis libero quis congue elementum...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <div class="announcement-item">
+          <strong>Site Maintenance</strong>
+          <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.</p>
+        </div>
+        <div class="announcement-item">
+          <strong>Community Share Day</strong>
+          <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.</p>
+        </div>
+        <div class="announcement-item">
+          <strong>Updated Privacy Policy</strong>
+          <p>Phasellus efficitur nisi eget elit consectetur.</p>
+        </div>
+      </div>
+
+      <div class="trending">
+        <h3>Trending</h3>
+        <div class="trending-item">🐶 @tegan - World Peace Builder</div>
+        <div class="trending-item">💡 @morgan - Super Cool Project</div>
+        <div class="trending-item">📱 @kendall - Life Changing App</div>
+        <div class="trending-item">🌐 @alex - No Traffic Maker</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
