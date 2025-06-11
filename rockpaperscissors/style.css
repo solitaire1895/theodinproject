@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+.playerChoice button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #0d8ce0;
+  color: white;
+}
+#result {
+  margin-top: 20px;
+  font-size: 3rem;
+}
+.playerChoice {
+  border: 2px solid #0d8ce0;
+  padding: 35px;
+  border-radius: 10px;
+  text-align: center;
+}
+h2{
+  color: #0d8ce0;
+}
