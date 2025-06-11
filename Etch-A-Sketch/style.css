@@ -1,0 +1,29 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+#gridContainer {
+  display: grid;
+  margin: 0 auto;
+  border: 2px solid #000;
+  width: 500px;
+  height: 500px;
+}
+
+.grid-square {
+  border: 1px solid #ddd;
+  background-color: white;
+}

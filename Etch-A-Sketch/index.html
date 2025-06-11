@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Etch-A-Sketch</h1>
+
+  <div class="controls">
+    <input type="color" id="colorPicker" value="#000000" />
+    <button id="clearBtn">Clear</button>
+    <input type="range" id="gridSize" min="4" max="64" value="16" />
+    <span id="gridSizeLabel">16 x 16</span>
+  </div>
+
+  <div id="gridContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
