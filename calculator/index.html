@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="result"></div>
+        <div class="btn-box">
+            <button class="btn reset utilities" onclick="clearDisplay()">AC</button>
+            <button class="btn sign utilities" onclick="toggleSign()">+/-</button>
+            <button class="btn percentage utilities" onclick="appendPercentage()">%</button>
+            <button class="btn div operator" onclick="appendOperator('/')">/</button>
+            <button class="btn seven" onclick="appendNumber('7')"> 7</button>
+            <button class="btn eight" onclick="appendNumber('8')">8</button>
+            <button class="btn nine" onclick="appendNumber('9')">9</button>
+            <button class="btn mult operator" onclick="appendOperator('*')">*</button>
+            <button class="btn four" onclick="appendNumber('4')">4</button>
+            <button class="btn five" onclick="appendNumber('5')">5</button>
+            <button class="btn six" onclick="appendNumber('6')">6</button>
+            <button class="btn sub operator" onclick="appendOperator('-')">-</button>
+            <button class="btn one" onclick="appendNumber('1')">1</button>
+            <button class="btn two" onclick="appendNumber('2')">2</button>
+            <button class="btn three" onclick="appendNumber('3')">3</button>
+            <button class="btn add operator" onclick="appendOperator('+')">+</button>
+            <button class="btn zero" onclick="appendNumber('0')">0</button>
+            <button class="btn dot" onclick="appendDecimal()">.</button>
+            <button class="btn equal operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+ <script src="script.js"></script>   
+</body>
+</html>
